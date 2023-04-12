@@ -1,15 +1,20 @@
-using System.Collections;
-using System.Collections.Generic;
+
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class MovementScript : MonoBehaviour
 {
+
+    private GeneralControls controls;
+
     private CharacterController controller;
     private Vector3 playerVelocity;
     private bool playerOnGround;
     private float playerSpeed = 2.0f;
     private float jumpHeight = 1.0f;
     private float gravityValue = -9.82f;
+
+    //TODO, change to new input system!
 
     // Start is called before the first frame update
     void Start()
